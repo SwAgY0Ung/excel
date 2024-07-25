@@ -1,20 +1,14 @@
-package cn.litblue.excel.controller;
+package com.yhy.excel.controller;
 
-import cn.litblue.excel.service.ExcelService;
+import com.yhy.excel.service.ExcelService;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
-import javax.servlet.http.HttpServletResponse;
-import java.util.concurrent.ExecutionException;
 
-/**
- * @author: litblue
- * @since: 2019/12/23 16:53
- */
 
 @RestController
-@RequestMapping("excel")
+@RequestMapping("/excel")
 public class ExcelController {
 
     @Resource
@@ -39,13 +33,5 @@ public class ExcelController {
 
     }
 
-    /**
-     * 导出Excel
-     * @param response
-     * @param filename  导出文件名，默认 xlsx 文件
-     */
-    @GetMapping("export")
-    public void exportExcelByEasyExcel(HttpServletResponse response, String filename) throws ExecutionException, InterruptedException {
-        excelService.exportExcelByEasyExcel(response,filename);
-    }
+
 }

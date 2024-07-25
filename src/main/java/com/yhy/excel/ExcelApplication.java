@@ -1,23 +1,19 @@
-package cn.litblue.excel;
+package com.yhy.excel;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.MultipartConfigFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.util.unit.DataSize;
-import tk.mybatis.spring.annotation.MapperScan;
 
 import javax.servlet.MultipartConfigElement;
 
-/**
- * @author litblue
- * @since 2019/12/23  16:41
- */
 
 @SpringBootApplication
 @EnableTransactionManagement
-@MapperScan("cn.litblue.excel.mapper")
+@MapperScan("com.yhy.excel.mapper")
 public class ExcelApplication {
 
     public static void main(String[] args) {
