@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yhy.excel.mapper.OldFourDiagInfoMapper">
+
+    <resultMap id="BaseResultMap" type="com.yhy.excel.entity.OldFourDiagInfo">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="parentId" column="parent_id" jdbcType="BIGINT"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="sort" column="sort" jdbcType="VARCHAR"/>
+            <result property="notes" column="notes" jdbcType="VARCHAR"/>
+            <result property="sex" column="sex" jdbcType="INTEGER"/>
+            <result property="haveDegree" column="have_degree" jdbcType="INTEGER"/>
+            <result property="state" column="state" jdbcType="INTEGER"/>
+            <result property="delFlag" column="del_flag" jdbcType="INTEGER"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="createUser" column="create_user" jdbcType="BIGINT"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="updateUser" column="update_user" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,parent_id,name,
+        sort,notes,sex,
+        have_degree,state,del_flag,
+        create_time,create_user,update_time,
+        update_user
+    </sql>
+</mapper>

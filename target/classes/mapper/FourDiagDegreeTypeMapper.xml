@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yhy.excel.mapper.FourDiagDegreeTypeMapper">
+
+    <resultMap id="BaseResultMap" type="com.yhy.excel.entity.FourDiagDegreeType">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="fourDiagInfoId" column="four_diag_info_id" jdbcType="BIGINT"/>
+            <result property="definition" column="definition" jdbcType="VARCHAR"/>
+            <result property="sort" column="sort" jdbcType="VARCHAR"/>
+            <result property="notes" column="notes" jdbcType="VARCHAR"/>
+            <result property="state" column="state" jdbcType="INTEGER"/>
+            <result property="delFlag" column="del_flag" jdbcType="INTEGER"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="createUser" column="create_user" jdbcType="BIGINT"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="updateUser" column="update_user" jdbcType="BIGINT"/>
+            <result property="multipleChoice" column="multiple_choice" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,four_diag_info_id,definition,
+        sort,notes,state,
+        del_flag,create_time,create_user,
+        update_time,update_user,multiple_choice
+    </sql>
+</mapper>

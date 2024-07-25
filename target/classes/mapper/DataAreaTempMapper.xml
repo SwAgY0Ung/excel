@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yhy.excel.mapper.DataAreaTempMapper">
+
+    <resultMap id="BaseResultMap" type="com.yhy.excel.entity.DataAreaTemp">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="fullName" column="full_name" jdbcType="VARCHAR"/>
+            <result property="pid" column="pid" jdbcType="VARCHAR"/>
+            <result property="sid" column="sid" jdbcType="VARCHAR"/>
+            <result property="spid" column="spid" jdbcType="VARCHAR"/>
+            <result property="sort" column="sort" jdbcType="INTEGER"/>
+            <result property="leaf" column="leaf" jdbcType="TINYINT"/>
+            <result property="level" column="level" jdbcType="INTEGER"/>
+            <result property="l1" column="l1" jdbcType="VARCHAR"/>
+            <result property="l2" column="l2" jdbcType="VARCHAR"/>
+            <result property="l3" column="l3" jdbcType="VARCHAR"/>
+            <result property="l4" column="l4" jdbcType="VARCHAR"/>
+            <result property="l5" column="l5" jdbcType="VARCHAR"/>
+            <result property="userTotal" column="user_total" jdbcType="INTEGER"/>
+            <result property="theAgedTotal" column="the_aged_total" jdbcType="INTEGER"/>
+            <result property="chronicDiseaseTotal" column="chronic_disease_total" jdbcType="INTEGER"/>
+            <result property="emphasisTotal" column="emphasis_total" jdbcType="INTEGER"/>
+            <result property="doctorTotal" column="doctor_total" jdbcType="INTEGER"/>
+            <result property="childTotal" column="child_total" jdbcType="INTEGER"/>
+            <result property="nurtureTotal" column="nurture_total" jdbcType="INTEGER"/>
+            <result property="spoilTotal" column="spoil_total" jdbcType="INTEGER"/>
+            <result property="subsidyTotal" column="subsidy_total" jdbcType="INTEGER"/>
+            <result property="insanityTotal" column="insanity_total" jdbcType="INTEGER"/>
+            <result property="censusTotal" column="census_total" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,full_name,
+        pid,sid,spid,
+        sort,leaf,level,
+        l1,l2,l3,
+        l4,l5,user_total,
+        the_aged_total,chronic_disease_total,emphasis_total,
+        doctor_total,child_total,nurture_total,
+        spoil_total,subsidy_total,insanity_total,
+        census_total
+    </sql>
+</mapper>
